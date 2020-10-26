@@ -1,0 +1,27 @@
+<html>
+<body>
+<h2>Hello!</h2>
+
+<form action="fetchData">
+	<input type="radio"  name="r" >Display Average age of students <br>
+	<input type="radio"  name="r" >Display details of the students who got highest marks in C++<br>
+	<input type="radio"  name="r" >Display the Id and Name of the student whose age is above average<br>
+	<input type="radio"  name="r" >Display details of student who did not give exam<br>
+	<input type="radio"  name="r" >Display subject wise total marks<br>
+	<input type="radio"  name="r" >Display Id and Total Marks of every students<br>
+	<input type="radio"  name="r" >Display Id,Name and Total Marks of every students<br>
+	<input type="radio"  name="r" >Display the details of students whose Name have a letter 'K' in it<br>
+	<input type="radio"  name="r" >Display the Name and Id of the Toppers<br>
+	<input type="radio"  name="r" >Display student Id, Name, Mentor Id and Mentor Name of every student<br>
+	<input type ="submit">
+</form>
+
+			<sql:setDataSource
+		var ="UserDB"
+		driver = "com.microsoft.sqlserver.jdbc.SQLServerDriver"
+		url="jdbc:sqlserver://192.168.52.71;databaseName=Trainee_may19"
+		user="TraineeUser" password ="Trainee@321"/>
+		<sql:query dataSource ="${UserDB}" var= "result">
+
+</body>
+</html>

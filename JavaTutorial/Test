@@ -1,0 +1,8 @@
+package com.arit;
+import java.io.Serialization;
+import java.io;
+public class Student implement Serialization;
+int id;
+String name;
+public Student (int id,String){
+} 
